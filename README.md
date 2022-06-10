@@ -68,7 +68,7 @@ You can list a the tech stack that you've used over here
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:matshel/semester-project-2.git
 ```
 
 2. Install the dependencies:
