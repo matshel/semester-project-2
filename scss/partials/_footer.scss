@@ -1,0 +1,62 @@
+footer {
+  @include flex;
+  background-color: $color-quatre;
+}
+
+.footer-container {
+  display: grid;
+  color: $color-tertiary;
+  background-color: $color-quatre;
+  max-width: 1800px;
+  padding: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "links"
+    "hours"
+    "visit"
+    "map";
+  &-logo {
+    @include footer-various;
+    grid-area: logo;
+    font-size: 2rem;
+    color: $color-tertiary;
+  }
+  &-links {
+    @include footer-various;
+    grid-area: links;
+  }
+  &-hours {
+    @include footer-various;
+    grid-area: hours;
+  }
+  &-visit {
+    @include footer-various;
+    grid-area: visit;
+  }
+  &-map {
+    grid-area: map;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+@media (min-width: 900px) {
+  .footer-container {
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+      "logo logo logo logo"
+      "links hours visit map";
+    &-logo {
+      place-self: start;
+    }
+  }
+}

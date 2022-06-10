@@ -1,0 +1,101 @@
+.relative {
+  position: relative;
+}
+
+.text-background {
+  &-one {
+    @include text;
+    top: 0%;
+    right: 0;
+  }
+  &-two {
+    @include text;
+    top: 40%;
+    left: 0;
+  }
+  &-three {
+    @include text;
+    top: 50%;
+    right: 0;
+  }
+  &-four {
+    @include text;
+    top: 90%;
+    left: 0;
+  }
+}
+
+.container-headings {
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
+  text-align: left;
+  &-featured {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
+.container-headings-featured {
+  min-width: 1080px;
+  max-width: 1800px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.product-featured {
+  max-width: 1200px;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 8em;
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+  &-info {
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2em;
+  }
+  &-title {
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+  }
+  &-price {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+  }
+  &-button {
+    @include flex;
+    background-color: $color-secondary;
+    width: 200px;
+    height: 70px;
+    margin-top: 2em;
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+  }
+}
+
+@media (min-width: 809px) {
+  .product-featured {
+    grid-template-columns: repeat(2, 1fr);
+    &-info {
+      padding-top: 0;
+    }
+  }
+  .product-featured:nth-child(2) {
+    direction: rtl;
+  }
+}

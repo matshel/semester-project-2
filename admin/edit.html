@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="nav-container">
+            <div class="nav-container-logo">
+              <h4>Nordic.</h4>
+              <h4>Chair.</h4>
+            </div>
+            <div class="space"></div>
+            <div class="menu-container"></div>
+          </div>
+        </nav>
+      </header>
+      <div class="form-container">
+        <div class="form-header">
+          <h1>Admin Panel > Edit Product</h1>
+        </div>
+        <form action="http://localhost:1337/uploads/" method="post">
+          <div class="message-container"></div>
+          <div id="image-show"></div>
+          <div>
+            <label for="image">Product Image</label>
+            <input
+              id="image"
+              type="file"
+              name="files"
+              accept="image/png, image/jpeg"
+            />
+          </div>
+          <div>
+            <label for="title">Title</label>
+            <input id="title" />
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <input id="price" />
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+          <input id="id" type="hidden" />
+          <div>
+            <button id="update">Update</button>
+          </div>
+          <div class="delete-container"></div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-container-logo">
+          <h4>Nordic.</h4>
+          <h4>Chair.</h4>
+        </div>
+        <div class="footer-container-links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">products</a></li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="admin/login.html">admin</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-hours">
+          <h3>Visiting Hours</h3>
+          <ul>
+            <li>Monday: 08:00 - 16:00</li>
+            <li>Tuesday: 08:00 - 16:00</li>
+            <li>Wednesday: 08:00 - 16:00</li>
+            <li>Thursday: 08:00 - 18:00</li>
+            <li>Friday: 08:00 - 16:00</li>
+            <li>Saturday: 08:00 - 20:00</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-container-visit">
+          <h3>Visiting Address</h3>
+          <ul>
+            <li>Brostadbakken 8b</li>
+            <li>0287 Oslo</li>
+          </ul>
+        </div>
+        <div class="footer-container-map">
+          <img src="../images/map.PNG" alt="map of oslo" />
+        </div>
+      </div>
+    </footer>
+    <script src="../js/admin/edit.js" type="module"></script>
+  </body>
+</html>

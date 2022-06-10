@@ -1,0 +1,37 @@
+// .container-hero {
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 60vh;
+// }
+
+.section-hero {
+  @include flex-column;
+  width: 100%;
+  background-color: $color-primary;
+  margin: 0 auto;
+  &-image {
+    flex: 1;
+    grid-area: hero-image;
+    width: 100%;
+    display: block;
+  }
+  &-info {
+    @include flex-column;
+    flex: 1;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    padding: 2em;
+    p {
+      max-width: 300px;
+    }
+    h1 {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-hero {
+    flex-direction: row-reverse;
+  }
+}

@@ -1,0 +1,22 @@
+.message {
+  @include flex;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid grey;
+  margin: 0 auto;
+  &.error {
+    border-color: $color-warning;
+    color: $color-tertiary;
+    background: $color-warning;
+  }
+  &.warning {
+    border-color: $color-secondary;
+    color: $color-tertiary;
+    background: $color-secondary;
+  }
+  &.success {
+    border-color: $color-success;
+    color: $color-tertiary;
+    background: $color-success;
+  }
+}

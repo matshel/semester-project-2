@@ -1,0 +1,38 @@
+#update {
+  @include button;
+  background-color: $color-secondary;
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+  margin: 1em 0 1em 0;
+}
+
+.delete {
+  @include button;
+  background-color: $color-warning;
+  &:hover {
+    background-color: $color-warning-hover;
+  }
+}
+
+.contact-button,
+.button-more-info {
+  @include button;
+  background-color: $color-secondary;
+  margin: 1em 0 1em 0;
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+  cursor: pointer;
+}
+
+.button-more-info {
+  @include flex;
+  width: 280px;
+  height: 50px;
+  cursor: pointer;
+  background-color: $color-secondary;
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+}

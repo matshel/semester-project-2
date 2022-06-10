@@ -1,0 +1,96 @@
+.hidden {
+  display: none;
+}
+
+.modal {
+  min-width: 250px;
+  max-width: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+  z-index: 3;
+  background-color: $color-tertiary;
+  &-open {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    color: $color-tertiary;
+    border: none;
+    box-shadow: 0 5px 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+  }
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+  .button-close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &-body {
+    padding: 10px 15px;
+  }
+}
+
+.two {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#overlay {
+  z-index: 2;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media (min-width: 600px) {
+  .two {
+    top: 45%;
+  }
+}
+@media (min-width: 1000px) {
+  .two {
+    top: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .two {
+    top: 80%;
+  }
+}

@@ -1,0 +1,17 @@
+.success {
+  background-color: $color-success;
+  color: $color-tertiary;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.8em;
+}
+
+.form-error {
+  @include flex;
+  display: none;
+  color: $color-warning;
+  font-size: 0.9rem;
+  text-align: left;
+  margin: 0.125rem 0;
+  padding-left: 10px;
+}

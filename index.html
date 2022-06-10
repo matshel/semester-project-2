@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nordic Chair - Hand made nordic chair design"
+    />
+    <meta
+      name="keywords"
+      content="chair, chairs, furniture, cruelty free, vegan chairs, eco chairs, hand made chairs "
+    />
+    <meta name="author" content="Nordic Chair" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="nav-container">
+            <div class="nav-container-logo">
+              <a href="index.html">
+                <h4>Nordic.</h4>
+                <h4>Chair.</h4>
+              </a>
+            </div>
+            <div class="space"></div>
+            <ul class="nav-links">
+              <li>
+                <a class="active" href="index.html">home</a>
+              </li>
+              <li><a href="products.html">products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="space"></div>
+            <div class="purse">
+              <a href="cart.html">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <div class="purse-number">
+                  <span>
+                    <div class="cart-quantity"></div>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="section-hero relative">
+        <!-- modal 1 -->
+        <button class="modal-open" data-modal-target="#modal">+</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Eco Friendly</div>
+            <button data-close-button class="button-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            We strive to have little impact on nature while selecting high
+            quality materials.
+          </div>
+        </div>
+        <div id="overlay"></div>
+        <!-- modal 2 -->
+        <button class="modal-open two" data-modal-target="#modal2">+</button>
+        <div class="modal" id="modal2">
+          <div class="modal-header">
+            <div class="title">Award Winning</div>
+            <button data-close-button class="button-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            We have won the world renowned chair awards the last 3 years for our
+            focus renewable material designs!
+          </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="section-hero-image"></div>
+        <div class="section-hero-info">
+          <div>
+            <h1>Scandinavian Designs</h1>
+            <!-- <h2>Design</h2> -->
+            <p>
+              Traditional nordic minimalism at it's finest embodied into your
+              new favorite chair!
+            </p>
+            <a href="#scroll">
+              <div class="button-more-info">
+                <span>Find Yours!</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="section relative" id="scroll">
+        <div class="text-background-one">Mini</div>
+        <div class="text-background-two">malism</div>
+        <div class="text-background-three">Eco</div>
+        <div class="text-background-four">friendly</div>
+        <div class="container-headings-featured">
+          <div class="container-heading">
+            <h2>Featured Products >></h2>
+          </div>
+        </div>
+        <div class="container-featured">
+          <div class="container-error">Loading products...</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-container-logo">
+          <h4>Nordic.</h4>
+          <h4>Chair.</h4>
+        </div>
+        <div class="footer-container-links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">products</a></li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="admin/login.html">admin</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-hours">
+          <h3>Visiting Hours</h3>
+          <ul>
+            <li>Monday: 08:00 - 16:00</li>
+            <li>Tuesday: 08:00 - 16:00</li>
+            <li>Wednesday: 08:00 - 16:00</li>
+            <li>Thursday: 08:00 - 18:00</li>
+            <li>Friday: 08:00 - 16:00</li>
+            <li>Saturday: 08:00 - 20:00</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-container-visit">
+          <h3>Visiting Address</h3>
+          <ul>
+            <li>Brostadbakken 8b</li>
+            <li>0287 Oslo</li>
+          </ul>
+        </div>
+        <div class="footer-container-map">
+          <img src="images/map.PNG" alt="map of oslo" />
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

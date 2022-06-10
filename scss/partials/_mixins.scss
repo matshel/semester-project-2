@@ -1,0 +1,44 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin text {
+  position: absolute;
+  color: $color-light;
+  font-size: 10rem;
+  z-index: -1;
+}
+
+@mixin section {
+  @include flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 4em 0 4em 0;
+}
+
+@mixin button {
+  width: 280px;
+  height: 50px;
+  color: $color-tertiary;
+  border: none;
+}
+
+@mixin place-items {
+  place-items: center;
+}
+
+@mixin footer-various {
+  margin-bottom: 1.5em;
+  h3 {
+    margin-bottom: 0.5em;
+  }
+}

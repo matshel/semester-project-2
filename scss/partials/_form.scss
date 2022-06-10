@@ -1,0 +1,68 @@
+.form-container {
+  @include flex-column;
+  margin: 4em 0 4em 0;
+  @media (min-width: 500px) {
+    .form-container {
+      margin: 7em 0 7em 0;
+    }
+  }
+}
+
+.form-header {
+  margin-bottom: 1em;
+  max-width: 600px;
+  width: 90%;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+form {
+  padding: 1em;
+  max-width: 600px;
+  box-shadow: 1px 1px 15px $color-shadow;
+  margin: 0 auto;
+  width: 90%;
+  div {
+    @include flex-column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  label {
+    margin-bottom: 10px;
+    font-family: $font-primary;
+  }
+  input {
+    width: 260px;
+    height: 50px;
+    box-shadow: 3px 3px 7px $color-shadow;
+    border: none;
+    font-family: $font-secondary;
+    font-size: 1rem;
+  }
+  textarea {
+    min-height: 200px;
+    width: 100%;
+    box-shadow: 3px 3px 7px $color-shadow;
+    border: none;
+    font-size: 1rem;
+  }
+  button {
+    width: 260px;
+    height: 50px;
+    color: $color-tertiary;
+    background-color: $color-secondary;
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+    font-size: 1rem;
+    border: none;
+    box-shadow: 3px 3px 7px $color-shadow;
+  }
+}
+
+// @media (min-width: 500px) {
+//   .form-container {
+//     margin: 7em 0 7em 0;
+//   }
+// }

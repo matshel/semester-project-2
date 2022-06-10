@@ -1,0 +1,31 @@
+header {
+  margin: 0 auto;
+  background-color: $color-quatre;
+  &-container {
+    max-width: 1200px;
+  }
+}
+
+.menu {
+  span {
+    margin-right: 5px;
+  }
+}
+
+#logout {
+  width: 75px;
+  height: 50px;
+  background-color: $color-secondary;
+  border: none;
+  margin-right: 20px;
+  margin-left: 10px;
+  padding: 0.2em;
+  color: $color-tertiary;
+}
+
+@media (min-width: 450px) {
+  #logout {
+    width: 150px;
+    height: 50px;
+  }
+}

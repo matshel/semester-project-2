@@ -1,0 +1,22 @@
+.container-search {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 0 2em 0;
+  .search {
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+    max-width: 1500px;
+    box-shadow: 0 5px 10px $color-shadow;
+    border: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container-search {
+    margin: 0 0 7em 0;
+  }
+}
