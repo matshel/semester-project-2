@@ -55,7 +55,6 @@ The admin section (apart from the log in form) is only accessible to logged in a
 
 ## Built With
 
-You can list a the tech stack that you've used over here
 
 - HTML
 - Sass
@@ -71,21 +70,12 @@ You can list a the tech stack that you've used over here
 git clone git@github.com:matshel/semester-project-2.git
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
-
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
-To run the app, run the following commands:
+To run the app, run the following:
 
-```bash
-npm run start
-```
+Run Liveserver
 
 ## Contact
 
