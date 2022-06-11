@@ -75,7 +75,9 @@ git clone git@github.com:matshel/semester-project-2.git
 
 To run the app, run the following:
 
+Run Strapi
 Run Liveserver
+
 
 ## Contact
 
